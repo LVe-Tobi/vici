@@ -2103,8 +2103,8 @@ function setCurrencyAdmin(code){
 
 // --- ADMIN SUPABASE ---
 function renderAdminSupabase(el){
-  const cfg={url:lsGet('sb_url'),key:lsGet('sb_key')};
-  const hasHardcoded = !!(https://kdpjesuorthfixouxruu.supabase.co && eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkcGplc3VvcnRoZml4b3V4cnV1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTU4MTgyOCwiZXhwIjoyMDk1MTU3ODI4fQ.kQ7IgqWFjSDUJa_uu1rvaGi0xSugQ17HsSgqLE5bPkA);
+  const cfg={url:lsGet('https://kdpjesuorthfixouxruu.supabase.co'),key:lsGet('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkcGplc3VvcnRoZml4b3V4cnV1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3OTU4MTgyOCwiZXhwIjoyMDk1MTU3ODI4fQ.kQ7IgqWFjSDUJa_uu1rvaGi0xSugQ17HsSgqLE5bPkA')};
+  const hasHardcoded = !!(SB_URL && SB_KEY);
   el.innerHTML=`
     <div class="admin-header"><h1>⚡ Configuration Supabase</h1></div>
     <div style="background:${sbConnected?'var(--success-bg)':'var(--warn-bg)'};border:1px solid ${sbConnected?'rgba(13,148,72,.2)':'rgba(217,119,6,.2)'};border-radius:var(--radius);padding:14px 18px;margin-bottom:20px;display:flex;align-items:center;gap:12px">
